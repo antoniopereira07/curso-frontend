@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="pt_br">
+        <head>
+                <title>HTML - Listas e Links</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                <!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+
+                <!-- Estilos Personalizados -->
+
+                <link rel="stylesheet" type="text/css" href="css/layouts-fluidos.css">
+                <link rel="stylesheet" type="text/css" href="css/modulo07.css">
+
+        </head>
+        <body>
+             <header>
+                     <h2>Listas e Links</h2>
+                     <a href="10-layouts-web.html">Home</a>
+             </header>
+
+                <h2 class="cor" id="lista-nao-ordenada">Lista não ordenada</h2>
+
+                <ul class="cor">
+                        <li>
+                               Brasil
+                               <ul>
+                                       <li>São Paulo</li>
+                                       <li>Rio de Janeiro</li>
+                                       <li>Pará</li>
+                                       <li>Piauí</li>
+                                                <ul>
+                                                         <li>Teresina</li>
+                                                </ul>     
+                               </ul>
+                        </li>
+                        <li>Argentina</li>
+                        <li>Uruguai</li>
+                        <li>Paraguai</li>
+                </ul>
+
+                <h2 class="cor">Lista ordenada</h2>
+
+                <ol class="cor">
+                        <li>Corinthians</li>
+                        <li>Palmeiras</li>
+                        <li>Santos</li>
+                        <li>São Paulo</li>
+                </ol>
+
+                <h2 class="cor">Lista de Definições</h2>
+
+                <dl class="cor">
+                       <dt>TV</dt>
+                               <dd>32 polegadas, smart, ...</dd>
+                               <dd>127 volts</dd>
+                       <dt>PC</dt>
+                               <dd>USB, 19 polegadas, Core I5</dd>
+                </dl>
+
+                <h2 class="cor">Links</h2>
+                
+                <nav class="space">
+
+                        <!--
+                            CORS
+                            Cross-Origin Resource Sharing ( Compartilhamento de recursos com origens diferentes)
+                        -->
+                        <p><a href="#top">Voltar ao topo</a></p> 
+                        <a href="#lista-nao-ordenada">Ver a lista não ordenada</a>
+                </nav>
+
+            <footer>
+                <p style="text-align: center;">Desenvolvido por Antonio</p>
+            </footer>
+        </body>
+</html>

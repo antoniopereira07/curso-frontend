@@ -1,0 +1,146 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+/*
+    Herança
+
+    1. Sobreposição / Sobrescreve
+    2. Aplica o último estilo definido
+    3. Prioriza estilo específicos (com seletores mais próximos)
+*/
+
+html {
+	font-family: sans-serif;
+	color: #333333;
+}
+
+header p {
+   color: #fff;
+   font-size: 1.5rem;
+}
+
+/*
+
+   Combinadores
+
+   (espaço) seletor descendente
+   (>) combinador de seletores filhos
+   (+) combinador de elementos irmãos  adjacentes / que vem na sequência
+   (~) combinador de elementos irmãos geral / após elemento de referência
+
+*/
+
+header h2 {
+	font-weight: 100;
+}
+
+header > h2 {
+	font-weight: 600;
+	color: white;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+/* Pseudo-elementos : */
+
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+section p {
+	font-size: 1.8rem;
+	padding: 15px;
+	margin: 0;
+}
+
+ul, ol, dl {
+	padding-left: 2rem;
+	margin-left: 1rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+	/* declaração resumida / completa */
+	font: italic bold 1.2rem/2 sans-serif;
+}
+
+/* 
+
+	Cores
+
+*/
+
+body {
+	background: url('../images/pattern.png') center top repeat #EEEEEE;
+}
+
+
+section {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+
+header,
+footer {
+	background-color: #034589;
+}
+
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: auto;
+	text-align: center;
+}
+
+.cor {
+	background-color: rgb(0, 174, 255);
+	width: 40%;
+	font-size: 15px;
+	margin: 0;
+	padding: 2rem;
+}
+
+.space {
+	background-color: rgb(0, 174, 255);
+	width: 40%;
+	padding: 2rem;
+	font-weight: bold;
+	display: block;
+}
