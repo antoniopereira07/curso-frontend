@@ -26,6 +26,8 @@ https://git-scm.com/
  ## Commits
  Informação de alteração
  - após testado seu código
+ - git add *
+ - git commit -m "mansagem"
 
  ## GitFlow
  Fluxo do Git
