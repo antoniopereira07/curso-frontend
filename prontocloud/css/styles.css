@@ -15,9 +15,11 @@ body {
 
 .container {
     display: block;
+    float: left;
     padding: 20px;
     width: 100%;
     margin: 0 auto;
+    max-width: 1198px;
 }
 
 header {
@@ -59,6 +61,21 @@ p {
     margin-bottom: 10px;
     line-height: 1.4; /* como se fosse 40% do tamanho a mais da fonte */
     color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#tenho-interesse {
+    background-color: #b8c8d6;
+    width: 100%;
+}
+
+#tenho-interesse .cog-heading,
+#tenho-interesse .cog-form__content {
+    background-color: #b8c8d6 !important;
 }
 
 ol {
@@ -114,8 +131,8 @@ footer {
     background-color: #254159;
     display: block;
     float: left;
-    width: 100%;
     padding: 20px;
+    width: 100%;
 }
 
 footer p {
@@ -126,6 +143,11 @@ footer p {
 footer small {
     font-size: 80%;
     display: block;
+}
+
+.cognito {
+    height: 380px !important;
+    overflow: hidden !important;
 }
 
 .cog-abuse {
