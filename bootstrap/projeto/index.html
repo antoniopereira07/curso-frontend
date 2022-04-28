@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>SanyTecnology</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Alexsany & Sany Tecnology</h1>
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre nós</h2>
+                    <p>Somos um site de comércio eletrônico especializado em celulares, tablets e toda parte de informática. Já estamos a 10 anos no mercado oferecendo os melhores produtos com tecnologia de ponta.
+                    Nossa maior satisfação é a realização dos nossos clientes em realizar os seus mais intensos desejos e nós contribuímos nessa conquista.</p>
+                    <p>Sabendo de tudo isso não haveria melhor opção para representar a Sany Tecnology, uma loja online que os amantes por tecnologia podem confiar de olhos fechados, 24 horas por dia, todos os dias da semana.</p>
+                    <a class="btn btn-lg btn-success">Botão</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="images/nome destaque.jpg" alt="Imagem Exemplo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Produtos</h2>
+
+                    <div class="card">
+                        <img src="images/samsung-S9plus.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung Gálaxy S9 Plus 128GB</h5>
+                            <p>O Samsung Galaxy S9 Plus é um dos smartphones Android mais avançados e completos que existem em circulação. Tem um grande display de 6.2 polegadas e uma resolução de 2960x1440 pixels que é uma das mais altas atualmente em circulação.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/acer-i5.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Acer Aspire 5 A514-54-54LT</h5>
+                            <p class="card-text">O Notebook Acer vem equipado com o novo processador Intel Core i5-1135G7 Tiger Lake de 11ª geração, memória RAM de 8 GB e no armazenamento um SSD de 256 GB. Seu sistema operacional é o Windows 10 Home e sua placa de vídeo integrada é a Intel Iris Xe Graphics G7.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/tablet-samsung.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Tablet Samsung Gálaxy A7 Lite</h5>
+                            <p>O Samsung Galaxy Tab A7 Lite é um tablet Android mediano, ideal para quem não tem muitas exigências mas não abre mão de um bom display touchscreen. Tem como funções oferecidas a conectividade Wi-fi e GPS. Tem leitor multimídia, videoconferência e bluetooth. Enfatizamos a boa memória interna de 32 GB com a possibilidade de expansão.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">ver produto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control" name="" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-sucess">Solicitar Cotação</button>
+                        
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Samsung Gálaxy S9 Plus 128GB</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o Preço</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Memória</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>128GB</td>
+                                <td>R$ 1.900</td>
+                            </tr>                          
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Acer Aspire 5 A514-54-54LT</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o Preço</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Memória RAM</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8 GB</td>
+                                <td>R$ 3.200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tablet Samsung Gálaxy A7 Lite</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o preço</h6>
+                    <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Memória Interna</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>32 GB</td>
+                            <td>R$ 1.250</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
