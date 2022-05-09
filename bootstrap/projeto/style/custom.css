@@ -1,17 +1,4 @@
 
-header {
-    background-color: rgb(8, 8, 158);
-    padding: 20px;
-}
-
-h1 {
-    color: antiquewhite;
-}
-
-a,
-a:hover {
-    background-color: black;
-}
 section {
     padding-bottom: 4rem;
     padding-top: 4rem;
