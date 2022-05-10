@@ -1,0 +1,14 @@
+
+header{
+    background-color: rgb(8, 8, 158);
+    padding: 20px;
+}
+
+h1 {
+color: antiquewhite;
+}
+
+a:hover {
+background-color: rgba(20, 88, 214, 0.486);
+border-radius: 8px;
+}

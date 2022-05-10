@@ -7,6 +7,7 @@
     <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
     <link rel="stylesheet" href="./style/custom-form.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <title>Cadastro</title>
 </head>
@@ -43,31 +44,43 @@
                 <div class="row">
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                            <input class="form-control" type="text" name="email" placeholder="digite seu email" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <label for="endereco" class="col-form-label col-form-label-sm">Endereço completo</label>
-                        <input type="text" class="form-control" id="endereco" class="form-control" placeholder="Endereço completo">
+                        <label for="endereco" class="col-form-label col-form-label-sm">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" class="form-control" placeholder="Endereço" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Complemento</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Ex: Bloco, quadra, Apartamento, hotel, casa, etc.">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
+                        <label for="telefone" class="col-form-label col-form-label-sm">Telefone</label>
+                        <input type="text" name="telefone" required id="telefone" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="bairro" class="col-form-label col-form-label-sm">Bairro</label>
+                        <input type="text" name="bairro" required id="bairro" class="form-control">
+                    </div>
+                    <div class="col">
                         <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
-                        <input type="text" name="cidade" id="cidade" class="form-control">
+                        <input type="text" name="cidade" required id="cidade" class="form-control">
                     </div>
                     <div class="col">
                         <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
-                        <select name="estado" id="estado" class="form-control">
+                        <select name="estado" required id="estado" class="form-control">
                             <option value="">Selecione um estado</option>
                             <option value="sp">SP</option>
                             <option value="al">AL</option>
@@ -76,7 +89,7 @@
                     </div>
                     <div class="col">
                         <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
-                        <input type="text" name="cep" id="cep" class="form-control">
+                        <input type="text" name="cep" required id="cep" class="form-control">
                     </div>
                 </div>
 

@@ -6,23 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <title>SanyTecnology</title>
-    <style>
-        header{
-            background-color: rgb(8, 8, 158);
-            padding: 20px;
-        }
-
-        h1 {
-        color: antiquewhite;
-        }
-
-        a:hover {
-        background-color: rgba(20, 88, 214, 0.486);
-        border-radius: 8px;
-        }
-    </style>
 </head>
 <body>
 
@@ -43,6 +29,35 @@
             </div>
         </div>
     </header>
+
+    <section>
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="images/acer-i5.jpg" style="height: 200px; width: 300px;" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/samsung-S9plus.jpg" style="height: 200px; width: 300px;" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/tablet-samsung.jpg" style="height: 200px; width: 300px;" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+    </section>
 
     <section id="sobre">
         <div class="container">
@@ -82,7 +97,7 @@
                         <img src="images/acer-i5.jpg" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
                             <h5 class="card-title">Acer Aspire 5 A514-54-54LT</h5>
-                            <p class="card-text">O Notebook Acer vem equipado com o novo processador Intel Core i5-1135G7 Tiger Lake de 11ª geração, memória RAM de 8 GB e no armazenamento um SSD de 256 GB. Seu sistema operacional é o Windows 10 Home e sua placa de vídeo integrada é a Intel Iris Xe Graphics G7.</p>
+                            <p class="card-text">O Notebook Acer vem equipado com o novo processador Intel Core i5-1135G7 Tiger Lake de 11ª geração, no armazenamento um SSD de 256 GB, e o seu sistema operacional é o Windows 10 Home, com uma placa de vídeo integrada intel Iris Xe Graphics G7.</p>
                             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">ver produto</a>
                         </div>
                     </div>
@@ -91,7 +106,7 @@
                         <img src="images/tablet-samsung.jpg" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
                             <h5 class="card-title">Tablet Samsung Gálaxy A7 Lite</h5>
-                            <p>O Samsung Galaxy Tab A7 Lite é um tablet Android mediano, ideal para quem não tem muitas exigências mas não abre mão de um bom display touchscreen. Tem como funções oferecidas a conectividade Wi-fi e GPS. Tem leitor multimídia, videoconferência e bluetooth. Enfatizamos a boa memória interna de 32 GB com a possibilidade de expansão.</p>
+                            <p>O Samsung Galaxy Tab A7 Lite é um tablet Android mediano, ideal para quem não tem muitas exigências e tem um bom display touchscreen. Tem como funções oferecidas a conectividade Wi-fi e GPS. Tem leitor multimídia, videoconferência e bluetooth.</p>
                             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">ver produto</a>
                         </div>
                     </div>
@@ -123,7 +138,7 @@
                             <textarea class="form-control" name="" rows="5"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-sucess">Solicitar Cotação</button>
+                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
                         
                     </form>
 
@@ -233,5 +248,11 @@
     </div>
 
     <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselId')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 3000
+        })
+    </script>
 </body>
 </html>
